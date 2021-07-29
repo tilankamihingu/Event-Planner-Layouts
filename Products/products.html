@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ee4a922350.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./products.css">
+</head>
+<body>
+    <div class="product-full">
+    <div class="scroll-button">
+        <i class="fas fa-arrow-circle-up"></i>
+    </div>
+    <div class="full">
+    <div class="navbar">
+        <img src="../images/logo.png" alt="" class="logo">
+        <nav>
+            <ul id="menuList">
+                <li><a href="../Home/home.html">Home</a></li>
+                <li><a href="../Products/products.html">Products</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Login/Register</a></li>
+            </ul>
+            
+        </nav>
+        <img src="../images/menu.png" alt="" class="menu-icon" onclick="togglemenu()">
+    </div>
+    <!------------------products------------------------>
+    <div class="product-container">
+        <div class="product-top">
+           <h1>Products</h1>
+            <p>Select Your Category</p>
+            <select class="indicator">
+                <option data-filter="all" class="active"><a href="#">Default</a></option>
+                <option data-filter="car"><a href="#">car</a></option>
+                <option data-filter="party"><a href="#">party</a></option>
+                <option data-filter="Photography"><a href="#">Photography</a></option>
+            </select>
+            <!--<ul class="indicator">
+                <li data-filter="all" class="active"><a href="#">All</a></li>
+                <li data-filter="party"><a href="#">Party</a></li>
+                <li data-filter="Photography"><a href="#">Photography</a></li>
+                <li data-filter="car"><a href="#">car</a></li>
+            </ul>-->
+            
+        </div>
+    <div class="products">
+        <div class="product-card">
+            <img src="../images/dj.jpg" alt="">
+            <div class="box">
+                <h3>DJ Party</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, officia.</p>
+                <h4>RS.25000.00(per day)</h4>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="../images/car.jpg" alt="">
+            <div class="box">
+                <h3>DJ Party</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, officia.</p>
+                <h5 data-category="car">Category</h5>
+                <h4>RS.25000.00(per day)</h4>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="../images/photo.jpg" alt="">
+            <div class="box">
+                <h3>DJ Party</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, officia.</p>
+                <h5 data-category="Photography">Category</h5>
+                <h4>RS.25000.00(per day)</h4>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="../images/photo.jpg" alt="">
+            <div class="box">
+                <h3>DJ Party</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, officia.</p>
+                <h5 data-category="party">Category</h5>
+                <h4>RS.25000.00(per day)</h4>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="../images/dj.jpg" alt="">
+            <div class="box">
+                <h3>DJ Party</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, officia.</p>
+                <h5 data-category="car">Category</h5>
+                <h4>RS.25000.00(per day)</h4>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="../images/car.jpg" alt="">
+            <div class="box">
+                <h3>DJ Party</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, officia.</p>
+                <h5 data-category="Photography">Category</h5>
+                <h4>RS.25000.00(per day)</h4>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="left-box">
+                <h2>About Us</h2>
+                <div class="left-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo perferendis totam est dolorem veritatis Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aut?</p>
+                </div>
+            </div>
+            <div class="center-box">
+                <h2>Adress</h2>
+                <div class="center-content">
+                    <ul>
+                        <li>Galle</li>
+                        <li>078963521</li>
+                        <li>bitloards@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="foot-icons">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="right-box">
+                <h2>Contact Us</h2>
+                <div class="right-content">
+                    <form>
+                        <h3>Email</h3>
+                        <input type="text" placeholder="email">
+                        <h3>Message</h3>
+                        <input type="text" placeholder="message">
+                    
+                        <button type="submit" class="footer-button">Send</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <h4>copyright@bitLoards</h4>
+    </footer>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px";
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+        }
+        const scrollBtn = document.querySelector('.scroll-button')
+
+        window.addEventListener('scroll', () =>{
+            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+                scrollBtn.style.display = 'block';
+            }
+            else{
+                scrollBtn.style.display = 'none';
+            }
+        })
+        scrollBtn.addEventListener('click' , () => {
+            window.scroll({
+                top: 0,
+                behavior: "smooth"
+            })
+        })
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 100,
+          duration: 400
+      });
+    </script>
+   <!--<script type="text/javascript">
+       let indicator = document.querySelector('.indicator').children;
+let products = document.querySelector('.products').children;
+
+for(let i=0; i<indicator.length; i++)
+{
+    indicator[i].onclick = function(){
+        for(let x=0; x<indicator.length; x++)
+        {
+            indicator[x].classList.remove('active');
+        }
+        this.classList.add('active');
+        const displayItems = this.getAttribute('data-filter');
+        for(let z=0; z<products.length; z++)
+        {
+            products[z].style.transform = 'scale(0)';
+            setTimeout(()=>{
+                products[z].style.display = 'none';
+            },500);
+
+            if((products[z].getAttribute('data-category') == displayItems) || displayItems == 'all'){
+                products[z].style.transform = 'scale(1)';
+                setTimeout(()=>{
+                    products[z].style.display = '';
+                },500);
+            }
+        }
+    }
+}
+   </script>-->
+</body>
+</html>
